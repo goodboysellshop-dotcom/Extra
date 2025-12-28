@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Survival - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Minecraftia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cube"></i>
+                <span>Extra Survival</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="rules.html" class="nav-link">Правила</a></li>
+                <li><a href="donate.html" class="nav-link">Донат</a></li>
+                <li><a href="connect.html" class="nav-link">Подключение</a></li>
+                <li><a href="telegram.html" class="nav-link">Telegram</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/images/hero-bg.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; padding-top: 80px;">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="minecraft-text">Extra Survival</h1>
+                <p class="subtitle">Лучший выживач на версии Minecraft 1.18.2 с OptiFine</p>
+                
+                <!-- IP сервера -->
+                <div style="background: rgba(46, 204, 113, 0.2); border: 2px solid var(--primary); border-radius: 12px; padding: 20px; margin: 30px 0; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <i class="fas fa-server" style="font-size: 2rem; color: var(--primary);"></i>
+                        <div>
+                            <div style="font-weight: bold; margin-bottom: 5px;">IP сервера:</div>
+                            <div style="font-family: 'Courier New', monospace; font-size: 1.2rem; color: white; word-break: break-all;">
+                                Extra_Survival.exaroton.me
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: 30px; margin: 40px 0; flex-wrap: wrap;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(5px);">
+                        <i class="fas fa-gamepad" style="color: var(--primary); font-size: 1.5rem;"></i>
+                        <span>Версия 1.18.2</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(5px);">
+                        <i class="fas fa-bolt" style="color: var(--primary); font-size: 1.5rem;"></i>
+                        <span>OptiFine обязательно</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(5px);">
+                        <i class="fas fa-users" style="color: var(--primary); font-size: 1.5rem;"></i>
+                        <span>До 100 игроков</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 40px; flex-wrap: wrap;">
+                    <a href="connect.html" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Как подключиться
+                    </a>
+                    <a href="telegram.html" class="btn btn-telegram">
+                        <i class="fab fa-telegram"></i> Наш Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Остальная часть index.html остается без изменений -->
+    ...

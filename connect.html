@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Survival - Подключение</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Minecraftia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cube"></i>
+                <span>Extra Survival</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="rules.html" class="nav-link">Правила</a></li>
+                <li><a href="donate.html" class="nav-link">Донат</a></li>
+                <li><a href="connect.html" class="nav-link active">Подключение</a></li>
+                <li><a href="telegram.html" class="nav-link">Telegram</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <section class="section" style="padding-top: 120px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/images/connect-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="page-title">Как подключиться</h1>
+            <p class="subtitle">Простая инструкция для подключения к серверу Extra Survival</p>
+            
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Вернуться на главную
+            </a>
+        </div>
+    </section>
+
+    <!-- Шаги подключения -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- IP сервера -->
+                <div class="card" style="margin-bottom: 40px; background: rgba(46, 204, 113, 0.1);">
+                    <div style="text-align: center;">
+                        <h2 style="color: var(--primary); margin-bottom: 20px;">
+                            <i class="fas fa-server"></i> Адрес сервера
+                        </h2>
+                        <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 12px; margin: 20px 0;">
+                            <div style="font-family: 'Courier New', monospace; font-size: 1.5rem; font-weight: bold; color: white; margin-bottom: 15px;">
+                                Extra_Survival.exaroton.me
+                            </div>
+                            <button onclick="copyServerIP()" class="btn btn-primary" style="width: 100%;">
+                                <i class="far fa-copy"></i> Скопировать IP адрес
+                            </button>
+                        </div>
+                        <p style="color: var(--gray); font-size: 0.9rem;">
+                            <i class="fas fa-info-circle"></i> Нажмите кнопку выше, чтобы скопировать адрес сервера
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Шаги подключения -->
+                <div style="display: flex; flex-direction: column; gap: 30px;">
+                    <!-- Шаг 1 -->
+                    <div class="card">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
+                                1
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px;">Установите Minecraft 1.18.2</h3>
+                                <p>Убедитесь, что у вас установлена именно версия <strong>1.18.2</strong>. Другие версии не поддерживаются.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 2 -->
+                    <div class="card">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
+                                2
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px;">Установите OptiFine</h3>
+                                <p>Для работы сервера <strong>обязательно</strong> требуется OptiFine для версии 1.18.2.</p>
+                                <p style="color: var(--warning); margin-top: 10px;">
+                                    <i class="fas fa-exclamation-triangle"></i> Без OptiFine подключиться не получится!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 3 -->
+                    <div class="card">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
+                                3
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px;">Подключитесь к серверу</h3>
+                                <p>В Minecraft:</p>
+                                <ol style="margin-left: 20px; margin-top: 10px;">
+                                    <li>Нажмите <strong>Мультиплеер</strong></li>
+                                    <li>Выберите <strong>Добавить сервер</strong></li>
+                                    <li>В поле "Адрес сервера" вставьте: <code>Extra_Survival.exaroton.me</code></li>
+                                    <li>Сохраните и подключитесь</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 4 -->
+                    <div class="card">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
+                                4
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 10px;">Следите за включением</h3>
+                                <p>Сервер работает <strong>не 24/7</strong>. Чтобы узнать, когда сервер включен:</p>
+                                <div style="margin-top: 15px;">
+                                    <a href="telegram.html" class="btn btn-telegram">
+                                        <i class="fab fa-telegram"></i> Подписаться на Telegram канал
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Частые проблемы -->
+                <div class="card" style="margin-top: 40px; background: rgba(52, 152, 219, 0.1);">
+                    <h3 style="color: var(--secondary); margin-bottom: 20px;">
+                        <i class="fas fa-question-circle"></i> Частые проблемы
+                    </h3>
+                    <div style="display: grid; gap: 15px;">
+                        <div>
+                            <strong>Q: Не могу подключиться к серверу</strong>
+                            <p>A: Проверьте, что у вас установлены именно версии 1.18.2 и OptiFine для этой версии.</p>
+                        </div>
+                        <div>
+                            <strong>Q: Пишет "Сервер не найден"</strong>
+                            <p>A: Возможно, сервер выключен. Проверьте Telegram канал для информации о работе.</p>
+                        </div>
+                        <div>
+                            <strong>Q: Лагает игра</strong>
+                            <p>A: Убедитесь, что OptiFine настроен правильно, попробуйте уменьшить настройки графики.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Extra Survival</h3>
+                    <p>IP сервера: Extra_Survival.exaroton.me</p>
+                    <p>Версия: 1.18.2 + OptiFine</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rules.html">Правила</a></li>
+                        <li><a href="donate.html">Донат</a></li>
+                        <li><a href="connect.html">Подключение</a></li>
+                        <li><a href="telegram.html">Telegram</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Помощь</h3>
+                    <p>Проблемы с подключением?</p>
+                    <a href="telegram.html" style="color: #0088cc; text-decoration: none;">
+                        <i class="fab fa-telegram"></i> Напишите в Telegram
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>IP: Extra_Survival.exaroton.me</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+    function copyServerIP() {
+        const ip = 'Extra_Survival.exaroton.me';
+        navigator.clipboard.writeText(ip).then(() => {
+            alert('IP адрес скопирован: ' + ip);
+        }).catch(err => {
+            console.error('Ошибка копирования: ', err);
+            prompt('Скопируйте вручную:', ip);
+        });
+    }
+    </script>
+</body>
+</html>
